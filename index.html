@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My A-Frame Scene</title>
+    <title>Hades II Poseidon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Include A-Frame Library -->
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
@@ -11,11 +11,16 @@
     <!-- A-Frame Scene -->
     <a-scene>
       <!-- Example Objects -->
-      <a-box position="0 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="-1 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-light type="directional" position="0 10 -10" color="#5ef2c6" intensity="-1" castShadow="true"></a-light>
+      <a-light type="point" position="-2 1 -1.5" color="#d4dfff" intensity="3"></a-light>
+      <a-light type="point" position="0 5 0" color="#fff2d4" intensity="2"></a-light>
+
+
+      <a-entity gltf-model="poseidonaframe.glb" position="0 1.8 -2" rotation="0 0 0" scale="0.1 0.1 0.1"></a-entity>
+      <a-image src="Blender.jpg" position="3 1.1 -2" width="10" height="17" scale="0.2 0.2"></a-image>
+      <a-image src="Supergiant.png" position="-2 1.5 -2" width="10" height="12" scale="0.22 0.22"></a-image>
+      d
+      <a-sky color="#3b3b3b"></a-sky>
     </a-scene>
   </body>
 </html>
